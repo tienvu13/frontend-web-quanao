@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/62cc840de8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cartegory.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/delivery.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo_color.png">
+        </div>
+        <div class="menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="">Sản phẩm</a>
+                <ul class="sub-menu">
+                    <li><a href="">Áo</a>
+                        <ul>
+                            <li><a href="">Áo sơ mi</a></li>
+                            <li><a href="">Áo thun</a></li>
+                            <li><a href="">Áo crop-top</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Quần</a>
+                        <ul>
+                            <li><a href="">Quần jean</a></li>
+                            <li><a href="">Quần lửng</a></li>
+                            <li><a href="">Quần dài</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cartegory.html">Chân váy</a>
+                        <ul>
+                            <li><a href="">Chân váy chữ A</a></li>
+                            <li><a href="">Chân váy bút chì</a></li>
+                            <li><a href="">Chân váy jenas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Đầm</a>
+                        <ul>
+                            <li><a href="">Váy đầm</a></li>
+                            <li><a href="">Đầm công sở </a></li>
+                            <li><a href="">Đầm voan hoa</a></li>
+                            <li><a href="">Đầm thun</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Phụ kiện</a>
+                        <ul>
+                            <li><a href="">Đồ lót</a></li>
+                            <li><a href="">Túi/ví</a></li>
+                            <li><a href="">Giày dép</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Sale</a></li>
+            <li><a href="">Bộ sưu tập</a>
+            <ul class="sub-menu">
+                <li><a href="">OCEAN JEWELS</a></li>
+            </ul>
+            </li>
+            <li><a href="">Thông tin</a></li>
+        </div>
+        <div class="others">
+            <li><input placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+            <li>
+                <a class="fa-solid fa-paw" href=""></a>
+            </li>
+            <li>
+                <a class="fa fa-user" href=""></a>
+            </li>
+            <li>
+                <a class="fa fa-shopping-bag" href="cart.html"></a>
+            </li>
+        </div>
+    </header>
+    <!---------------------delivery-------------------------->
+    <section class="delivery">
+        <div class="container">
+            <div class="delivery-top-wrap">
+                <div class="delivery-top">
+                    <div class="delivery-top-cart cart-top-item">
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                    <div class="delivery-top-adress cart-top-item">
+                        <a href="delivery.html"><i class="fa-solid fa-location-dot"></i></a>
+                    </div>
+                    <div class="delivery-top-payment cart-top-item">
+                        <a href=""><i class="fa-solid fa-money-bill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="delivery-content row">
+                <div class="delivery-content-left">
+                    <p>Vui lòng chọn địa chỉ giao hàng</p>
+                    <div class="delivery-content-left-dangnhap">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <p>Đăng nhập(Nếu bạn đã có tài khoản)</p>
+                    </div>
+                    <div class="delivery-content-left-khachle">
+                        <input checked name="loaikhach" type="radio" >
+                        <p><span style="font-weight: bold;">Khách lẻ</span> (Nếu bạn không muốn lưu thông tin)</p>
+                    </div>
+                    <div class="delivery-content-left-dangky">
+                        <input  name="loaikhach" type="radio" >
+                        <p><span style="font-weight: bold;">Đăng ký</span> (Tạo mới tài khoản với thông tin bên dưới)</p>
+                    </div>
+                    <div class="delivery-content-left-input-top row">
+                       <div class="delivery-content-left-input-top-item">
+                        <label for="">Họ và tên<span style="color: red;">*</span></label>
+                        <input type="text">
+                       </div>
+                       <div class="delivery-content-left-input-top-item">
+                        <label for="">Điện thoại<span style="color: red;">*</span></label>
+                        <input type="text">
+                       </div>
+                       <div class="delivery-content-left-input-top-item">
+                        <label for="">Tỉnh/TP<span style="color: red;">*</span></label>
+                        <input type="text">
+                       </div>  
+                       <div class="delivery-content-left-input-top-item">
+                        <label for="">Quận/Huyện<span style="color: red;">*</span></label>
+                        <input type="text">
+                       </div>  
+                    </div>
+                    <div class="delivery-content-left-input-bottom">
+                        <label for="">Địa chỉ<span style="color: red;">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="delivery-content-left-botton row">
+                        <a href=""><span>&#171;</span><p>Quay lại giỏ hàng</p></a>
+                        <button><p style="font-weight: bold;">Thanh toán và giao hàng</p></button>
+                    </div>
+                </div>
+                <div class="delivery-content-right">
+                    <table>
+                        <tr>
+                            <th>Tên sản phẩm</th>
+                            <th>Giảm giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                        <tr>
+                            <td>chân váy xếp ly cạp cao phối khuy</td>
+                            <td>-20%</td>
+                            <td>1</td>
+                            <td><p>1.080.000 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Tổng</td>
+                            <td style="font-weight: bold;"><p>1.080.000 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Thuế VAT</td>
+                            <td style="font-weight: bold;"><p>108.000 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Tổng tiền hàng</td>
+                            <td style="font-weight: bold;"><p>1.188.000 <sup>đ</sup></p></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>   
+    <!--------------------------app--------------------->
+    <section class="app-container">
+        <p>Tải ứng dụng</p>
+        <div class="app-google">
+            <img src="images/appstore.png" alt="">
+            <img src="images/googleplay.png" alt="">
+        </div>
+        <p>Nhận bản tin</p>
+        <input type="text" placeholder="Nhập email của bạn...">
+    </section>
+    <!--------------------------footer--------------------->
+    <div class="footer-top">
+        <li>
+            <a href=""><img src="images/dathongbao.png" alt=""></a>
+        </li>
+        <li><a href="">Liên hệ</a></li>
+        <li>
+            <a href="">Tuyển dụng</a></li>
+        <li>
+            <a href="">Giới thiệu</a></li>
+        <li>
+            <a href="" class="fab fa-facebook-f"></a>
+            <a href="" class="fab fa-twitter"></a>
+            <a href="" class="fab fa-youtube"></a>
+        </li>
+    </div>
+    <div class="footer-center">
+        <p>Công ty Cổ phần Phúc Linh với số đăng ký kinh doanh: 0123456789<br> Địa chỉ đăng ký: 21 Yên Xá, Tân Triều, Thanh Trì, Hà Nội, Việt Nam - 0234567891<br> Đặt hàng online : <b>0345678912</b>.
+        </p>
+    </div>
+    <div class="footer-bottom">
+        @phuclinh all rights reserved
+    </div>
+</body>
+<script src="js/slider.js"></script>
+<script src="js/cartegory.js"></script>
+<script src="js/product.js"></script>
+</html>

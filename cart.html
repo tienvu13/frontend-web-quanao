@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/62cc840de8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cartegory.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo_color.png">
+        </div>
+        <div class="menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="">Sản phẩm</a>
+                <ul class="sub-menu">
+                    <li><a href="">Áo</a>
+                        <ul>
+                            <li><a href="">Áo sơ mi</a></li>
+                            <li><a href="">Áo thun</a></li>
+                            <li><a href="">Áo crop-top</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Quần</a>
+                        <ul>
+                            <li><a href="">Quần jean</a></li>
+                            <li><a href="">Quần lửng</a></li>
+                            <li><a href="">Quần dài</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cartegory.html">Chân váy</a>
+                        <ul>
+                            <li><a href="">Chân váy chữ A</a></li>
+                            <li><a href="">Chân váy bút chì</a></li>
+                            <li><a href="">Chân váy jenas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Đầm</a>
+                        <ul>
+                            <li><a href="">Váy đầm</a></li>
+                            <li><a href="">Đầm công sở </a></li>
+                            <li><a href="">Đầm voan hoa</a></li>
+                            <li><a href="">Đầm thun</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Phụ kiện</a>
+                        <ul>
+                            <li><a href="">Đồ lót</a></li>
+                            <li><a href="">Túi/ví</a></li>
+                            <li><a href="">Giày dép</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Sale</a></li>
+            <li><a href="">Bộ sưu tập</a>
+            <ul class="sub-menu">
+                <li><a href="">OCEAN JEWELS</a></li>
+            </ul>
+            </li>
+            <li><a href="">Thông tin</a></li>
+        </div>
+        <div class="others">
+            <li><input placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+            <li>
+                <a class="fa-solid fa-paw" href=""></a>
+            </li>
+            <li>
+                <a class="fa fa-user" href=""></a>
+            </li>
+            <li>
+                <a class="fa fa-shopping-bag" href="cart.html"></a>
+            </li>
+        </div>
+    </header>
+    <!---------------------cart-------------------------->
+    <section class="cart">
+        <div class="container">
+            <div class="cart-top-wrap">
+                <div class="cart-top">
+                    <div class="cart-top-cart cart-top-item">
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                    <div class="cart-top-adress cart-top-item">
+                        <a href="delivery.html"><i class="fa-solid fa-location-dot"></i></a>
+                    </div>
+                    <div class="cart-top-payment cart-top-item">
+                        <a href=""><i class="fa-solid fa-money-bill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="car-content row">
+                <div class="cart-content-left">
+                    <table>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Màu</th>
+                            <th>Size</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th>Xóa</th>
+                        </tr>
+                        <tr>
+                            <td><img src="images/sp1.webp" alt=""></td>
+                            <td><p>CHÂN VÁY XẾP LY CẠP CAO PHỐI KHUY</p></td>
+                            <td><img src="images/be.png" alt=""></td>
+                            <td><p>L</p></td>
+                            <td><input type="number" value="1" min="1"></td>
+                            <td><p>1.080.000 <sup>đ</sup></p></td>
+                            <td><span>X</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cart-content-right">
+                    <table>
+                        <tr>
+                            <th colspan="2">Tổng tiền giỏ hàng</th>
+                        </tr>
+                        <tr>
+                            <td>Tổng sản phẩm</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Tổng tiền hàng</td>
+                            <td><p>1.080.000 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td>Tạm tính</td>
+                            <td><p style="color: black;font-weight: bold;">1.080.000 <sup>đ</sup></p></td>
+
+                        </tr>
+                    </table>
+                    <div class="cart-content-right-text">
+                        <p>Miễn ship cho đơn trên 2.000.000 đ</p>
+                        <p style="color: red; font-weight: bold;">Mua thêm <span style="font-size: 18px;">920.000 đ</span> sẽ được miễn ship</p>
+                    </div>
+                    <div class="cart-content-right-button">
+                        <button>Tiếp tục mua sắm</button>
+                        <button>Thanh toán</button>
+                    </div>
+                    <div class="cart-content-right-dangnhap">
+                        <p>Tài khoản</p>
+                        <p>Hãy <a href="" style="color: blueviolet;">đăng nhập</a> tài khoản của bạn để tích điểm thành viên</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------app--------------------->
+    <section class="app-container">
+        <p>Tải ứng dụng</p>
+        <div class="app-google">
+            <img src="images/appstore.png" alt="">
+            <img src="images/googleplay.png" alt="">
+        </div>
+        <p>Nhận bản tin</p>
+        <input type="text" placeholder="Nhập email của bạn...">
+    </section>
+    <!--------------------------footer--------------------->
+    <div class="footer-top">
+        <li>
+            <a href=""><img src="images/dathongbao.png" alt=""></a>
+        </li>
+        <li><a href="">Liên hệ</a></li>
+        <li>
+            <a href="">Tuyển dụng</a></li>
+        <li>
+            <a href="">Giới thiệu</a></li>
+        <li>
+            <a href="" class="fab fa-facebook-f"></a>
+            <a href="" class="fab fa-twitter"></a>
+            <a href="" class="fab fa-youtube"></a>
+        </li>
+    </div>
+    <div class="footer-center">
+        <p>Công ty Cổ phần Phúc Linh với số đăng ký kinh doanh: 0123456789<br> Địa chỉ đăng ký: 21 Yên Xá, Tân Triều, Thanh Trì, Hà Nội, Việt Nam - 0234567891<br> Đặt hàng online : <b>0345678912</b>.
+        </p>
+    </div>
+    <div class="footer-bottom">
+        @phuclinh all rights reserved
+    </div>
+</body>
+<script src="js/slider.js"></script>
+<script src="js/cartegory.js"></script>
+<script src="js/product.js"></script>
+</html>
