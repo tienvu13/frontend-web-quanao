@@ -19,7 +19,7 @@
         </div>
         <div class="menu">
             <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="">Sản phẩm</a>
+            <li><a href="cartegory.html">Sản phẩm</a>
                 <ul class="sub-menu">
                     <li><a href="">Áo</a>
                         <ul>
@@ -61,14 +61,18 @@
             </li>
             <li><a href="">Sale</a></li>
             <li><a href="">Bộ sưu tập</a>
-            <ul class="sub-menu">
-                <li><a href="">OCEAN JEWELS</a></li>
-            </ul>
+                <ul class="sub-menu">
+                    <li><a href="">OCEAN JEWELS</a></li>
+                </ul>
             </li>
             <li><a href="">Thông tin</a></li>
         </div>
         <div class="others">
-            <li><input placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+            <li>
+                <input id="search-input" placeholder="Tìm kiếm" type="text" autocomplete="off">
+                <i class="fas fa-search"></i>
+                <ul id="search-results" class="search-results"></ul>
+            </li>
             <li>
                 <a class="fa-solid fa-paw" href=""></a>
             </li>
@@ -84,14 +88,15 @@
     <section class="cartegory">
         <div class="container">
             <div class="cartegory-top row">
-                <p>Trang chủ</p> <span>&#8594;</span><p>Chân váy</p>
+                <p>Trang chủ</p> <span>&#8594;</span>
+                <p>Chân váy</p>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="cartegory-left">
                     <ul>
-                        <li class="cartegory-left-li"> <span>Sản phẩm</span>                            
+                        <li class="cartegory-left-li"> <span>Sản phẩm</span>
                             <ul>
                                 <li><a href="">Chân váy chữ A</a></li>
                                 <li><a href="">Chân váy bút chì</a></li>
@@ -100,7 +105,7 @@
                         </li>
                         <li class="cartegory-left-color"><a href="#">Màu sắc</a>
                             <ul>
-                                <div class="cartegory-right-top-item">    
+                                <div class="cartegory-right-top-item">
                                     <span class="color-filter" data-color="den">
                                         <img src="images/den.png" alt="Đen">
                                         <span class="color-name">Đen</span>
@@ -150,7 +155,7 @@
                                         <span class="color-name">Tím</span>
                                     </span>
                                 </div>
-                                
+
                             </ul>
                         </li>
                         <button id="apply-filter">Lọc</button>
@@ -162,16 +167,16 @@
                         <div class="cartegory-right-top-item ">
                             <p>Chân váy</p>
                         </div>
-                        <div class="cartegory-right-top-item">                    
+                        <div class="cartegory-right-top-item">
                             <select name="" id="sort-select">
-                                <option value="default">Sắp xếp</option>                            
+                                <option value="default">Sắp xếp</option>
                                 <option value="asc">Giá cao đến thấp</option>
                                 <option value="desc">Giá thấp đến cao</option>
                             </select>
                         </div>
                     </div>
                     <div class="cartegory-right-content row">
-                        <div class="cartegory-right-content-item color-be" data-price="1080000" >
+                        <div class="cartegory-right-content-item color-be" data-price="1080000">
                             <a href="product.html">
                                 <img class="product-image" src="images/sp1.webp" alt="">
                                 <img class="hover-image" src="images/sp1.1.webp" alt="">
@@ -179,66 +184,68 @@
                                 <p>1.080.000<sup>đ</sup></p>
                             </a>
                         </div>
-                        <div class="cartegory-right-content-item color-be" data-price="872000" >
-                            <a href="">
+                        <div class="cartegory-right-content-item color-be" data-price="872000">
+                            <a href="product.html">
                                 <img class="product-image" src="images/sp2.webp" alt="">
                                 <img class="hover-image" src="images/sp2.1.webp" alt="">
                                 <h1>Chân Váy Xếp Ly Dáng Suông</h1>
                                 <p>872.000<sup>đ</sup></p>
                             </a>
                         </div>
-                        <div class="cartegory-right-content-item color-den" data-price="872000" >
-                            <a href="">
+                        <div class="cartegory-right-content-item color-den" data-price="872000">
+                            <a href="product.html">
                                 <img class="product-image" src="images/sp3.webp" alt="">
                                 <img class="hover-image" src="images/sp3.1.webp" alt="">
                                 <h1>Zuýp Xòe Rút Eo</h1>
                                 <p>872.000<sup>đ</sup></p>
                             </a>
-                        </div>    
-                        <div class="cartegory-right-content-item color-trang" data-price="872000" >
-                            <a href="">
+                        </div>
+                        <div class="cartegory-right-content-item color-trang" data-price="872000">
+                            <a href="product.html">
                                 <img class="product-image" src="images/sp4.webp" alt="">
                                 <img class="hover-image" src="images/sp4.1.webp" alt="">
                                 <h1>ZUÝP XÒE RÚT EO</h1>
                                 <p>872.000<sup>đ</sup></p>
                             </a>
-                        </div>    
-                        <div class="cartegory-right-content-item color-hong" data-price="1080000" >
-                            <a href="">
+                        </div>
+                        <div class="cartegory-right-content-item color-hong" data-price="1080000">
+                            <a href="product.html">
                                 <img class="product-image" src="images/sp5.webp" alt="">
                                 <img class="hover-image" src="images/sp5.1.webp" alt="">
                                 <h1>CHÂN VÁY XẾP LY CẠP CAO PHỐI KHUY</h1>
                                 <p>1.080.000<sup>đ</sup></p>
                             </a>
-                        </div>    
-                        <div class="cartegory-right-content-item color-xam" data-price="792000" >
-                            <a href="">
+                        </div>
+                        <div class="cartegory-right-content-item color-xam" data-price="792000">
+                            <a href="product.html">
                                 <img class="product-image" src="images/sp6.webp" alt="">
                                 <img class="hover-image" src="images/sp6.1.webp" alt="">
                                 <h1>CHÂN VÁY KAKI PHỐI TÚI</h1>
                                 <p>792.000<sup>đ</sup></p>
                             </a>
-                        </div>    
-                        <div class="cartegory-right-content-item color-den" data-price="1000000" >
-                            <a href="">
+                        </div>
+                        <div class="cartegory-right-content-item color-den" data-price="1000000">
+                            <a href="product.html">
                                 <img class="product-image" src="images/sp7.webp" alt="">
                                 <img class="hover-image" src="images/sp7.1.webp" alt="">
                                 <h1>CHÂN VÁY MIDI PHỐI REN</h1>
                                 <p>1.000.000<sup>đ</sup></p>
                             </a>
-                        </div>    
-                        <div class="cartegory-right-content-item color-den" data-price="" >
-                            <a href="">
+                        </div>
+                        <div class="cartegory-right-content-item color-den" data-price="">
+                            <a href="product.html">
                                 <img class="product-image" src="images/sp8.webp" alt="">
                                 <img class="hover-image" src="images/sp8.1.webp" alt="">
                                 <h1>CHÂN VÁY CHỮ A PHỐI VIỀN HOA NỔI</h1>
                                 <p>712.000<sup>đ</sup></p>
                             </a>
-                        </div>            
+                        </div>
                     </div>
                     <div class="cartegory-right-bottom">
                         <div class="cartegory-right-bottom-items row">
-                            <p>Trang đầu </p> <span>&#60;</span> <a href="#" class="prev-page">1</a> <a href="#" class="current-page">2</a> <a href="#" class="next-page">3</a> <span>&#62;</span> <p>Trang cuối</p>
+                            <p>Trang đầu </p> <span>&#60;</span> <a href="#" class="prev-page">1</a> <a href="#"
+                                class="current-page">2</a> <a href="#" class="next-page">3</a> <span>&#62;</span>
+                            <p>Trang cuối</p>
                         </div>
                     </div>
                 </div>
@@ -262,9 +269,11 @@
         </li>
         <li><a href="">Liên hệ</a></li>
         <li>
-            <a href="">Tuyển dụng</a></li>
+            <a href="">Tuyển dụng</a>
+        </li>
         <li>
-            <a href="">Giới thiệu</a></li>
+            <a href="">Giới thiệu</a>
+        </li>
         <li>
             <a href="" class="fab fa-facebook-f"></a>
             <a href="" class="fab fa-twitter"></a>
@@ -272,7 +281,8 @@
         </li>
     </div>
     <div class="footer-center">
-        <p>Công ty Cổ phần Phúc Linh với số đăng ký kinh doanh: 0123456789<br> Địa chỉ đăng ký: 21 Yên Xá, Tân Triều, Thanh Trì, Hà Nội, Việt Nam - 0234567891<br> Đặt hàng online : <b>0345678912</b>.
+        <p>Công ty Cổ phần Phúc Linh với số đăng ký kinh doanh: 0123456789<br> Địa chỉ đăng ký: 21 Yên Xá, Tân Triều,
+            Thanh Trì, Hà Nội, Việt Nam - 0234567891<br> Đặt hàng online : <b>0345678912</b>.
         </p>
     </div>
     <div class="footer-bottom">
@@ -282,4 +292,5 @@
 <script src="js/slider.js"></script>
 <script src="js/cartegory.js"></script>
 <script src="js/product.js"></script>
+
 </html>
