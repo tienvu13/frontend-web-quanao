@@ -1,0 +1,21 @@
+.search-results {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background: white;
+    width: 250px; /* Tùy chỉnh độ rộng */
+    border: 1px solid #ccc;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  
+  .search-results li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .search-results li:hover {
+    background-color: #f0f0f0;
+  }
