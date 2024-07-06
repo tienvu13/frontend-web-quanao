@@ -87,19 +87,18 @@
             </li>
         </div>
     </header>
-    <section id="Silder">
-        <div class="aspect-ratio-169">
-            <img src="images/silder1.webp" alt="">
-            <img src="images/silder2.webp" alt="">
-            <img src="images/silder3.webp" alt="">
-            
-        </div>
-        <div class="dot-container">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>           
-        </div>
-    </section>
+    <div class="slider-container">
+        <div class="slider">       
+            <div class="slide"><img src="images/silder1.webp" alt="Slide 1"></div>       
+            <div class="slide"><img src="images/silder2.webp" alt="Slide 2"></div>       
+            <div class="slide"><img src="images/silder3.webp" alt="Slide 3"></div>       
+        </div>        
+        <div class="dot-container">     
+            <span class="dot" onclick="currentSlide(0)"></span> 
+            <span class="dot" onclick="currentSlide(1)"></span>     
+            <span class="dot" onclick="currentSlide(2)"></span>          
+        </div>        
+    </div>
     <!--------------------------app--------------------->
     <section class="app-container">
         <p>Tải ứng dụng</p>

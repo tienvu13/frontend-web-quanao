@@ -11,47 +11,44 @@ window.addEventListener("scroll", function() {
     }
 });
 
-// Lấy tất cả các hình ảnh trong các phần tử có class "aspect-ratio-169"
-const imgPosition = document.querySelectorAll(".aspect-ratio-169 img");
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+const totalSlides = slides.length;
 
-// Lấy phần tử chứa hình ảnh (container) có class "aspect-ratio-169"
-const imgContainer = document.querySelector(".aspect-ratio-169");
+function showSlide(index) {
+    if (index < 0) {
+        currentIndex = totalSlides - 1;
+    } else if (index >= totalSlides) {
+        currentIndex = 0;
+    } else {
+        currentIndex = index;
+    }
 
-// Lấy tất cả các phần tử dot (chấm điều hướng)
-const dotItem = document.querySelectorAll(".dot");
-
-// Số lượng hình ảnh
-let imgNumber = imgPosition.length;
-
-// Biến index để xác định vị trí hiện tại của hình ảnh đang hiển thị
-let index = 0;
-
-// Đặt vị trí ban đầu cho các hình ảnh và thêm sự kiện click cho các dot
-imgPosition.forEach(function(image, idx) {
-    image.style.left = idx * 100 + "%"; // Thiết lập vị trí left cho từng hình ảnh
-    dotItem[idx].addEventListener("click", function() {
-        slider(idx); // Gọi hàm slider khi click vào dot
+    slides.forEach((slide, i) => {
+        const isCurrent = i === currentIndex;
+        const scaleFactor = isCurrent ? 1 : 0.8;
+        const transformValue = `scale(${scaleFactor})`;
+        const widthValue = isCurrent ? '100%' : '80%';
+        slide.style.transform = transformValue;
+        slide.style.width = widthValue;
+        dots[i].classList.toggle('active-dot', isCurrent);
     });
-});
 
-// Hàm thực hiện chuyển hình ảnh tự động
-function imgSlide() {
-    index++;
-    if (index >= imgNumber) {
-        index = 0;
-    }
-    slider(index);
+    const translateValue = `-${currentIndex * 100}%`;
+    document.querySelector('.slider').style.transform = `translateX(${translateValue})`;
 }
 
-// Hàm slider để cập nhật vị trí hình ảnh và dot active
-function slider(idx) {
-    imgContainer.style.left = "-" + idx * 100 + "%"; // Di chuyển container đến vị trí mới
-    const dotActive = document.querySelector(".dot.active"); // Tìm dot hiện tại có class active
-    if (dotActive) {
-        dotActive.classList.remove("active"); // Loại bỏ class active từ dot hiện tại (nếu có)
-    }
-    dotItem[idx].classList.add("active"); // Thêm class active cho dot mới
+function nextSlide() {
+    showSlide(currentIndex + 1);
 }
 
-// Thiết lập setInterval để tự động chuyển hình sau mỗi 5 giây
-setInterval(imgSlide, 5000);
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
+
+function currentSlide(index) {
+    showSlide(index);
+}
+
+setInterval(nextSlide, 5000);
